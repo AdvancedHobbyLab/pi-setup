@@ -15,6 +15,8 @@ libncursesw5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-d
 pyenv install -v 3.9.16
 pyenv global 3.9.16
 
+eval "$(pyenv init -)"
+
 python3 -m pip install --extra-index-url https://google-coral.github.io/py-repo/ pycoral~=2.0
 
 # Downgrade numpy for compatability with tensorflow
