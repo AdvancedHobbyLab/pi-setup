@@ -1,0 +1,12 @@
+[Unit]
+Description=TC358743 HDMI bridge configuration
+After=local-fs.target i2c-dev.service dev-v4l-subdev-tc358743.device dev-media-tc358743.device
+Requires=dev-v4l-subdev2.device
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/tc358743-init.sh
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target

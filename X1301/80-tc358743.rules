@@ -1,0 +1,3 @@
+SUBSYSTEM=="media", KERNEL=="media*", ATTR{model}=="rp1-cfe", KERNELS=="1f00128000.csi", DRIVERS=="rp1-cfe", SYMLINK+="media-rp1-cfe"
+SUBSYSTEM=="video4linux", KERNEL=="v4l-subdev*", ATTR{name}=="tc358743 11-000f", KERNELS=="11-000f", SUBSYSTEMS=="i2c", DRIVERS=="tc358743", SYMLINK+="v4l-subdev-tc358743" 
+SUBSYSTEM=="video4linux", KERNEL=="video*", ATTR{name}=="rp1-cfe-csi2_ch0", KERNELS=="1f00128000.csi", DRIVERS=="rp1-cfe", SYMLINK+="video-rp1-cfe-csi2_ch0" 
