@@ -2,7 +2,7 @@ This folder contains the setup scripts for the [Geekworm X1301 HDMI Capture Hat*
 ```
 sudo ./setup.sh
 ```
-A reboot will be required after running the setup scrip. Be sure that the video device is connected before the Pi boots up. If you connect a defice after boot, you may re-run the startup scripts by running:
+A reboot will be required after running the setup script. Be sure that the video device is connected before the Pi boots up. If you connect a device after boot, you may re-run the startup scripts by running:
 ```
 sudo systemctl restart tc358743-init
 ```
